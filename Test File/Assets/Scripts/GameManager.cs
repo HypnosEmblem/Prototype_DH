@@ -14,21 +14,30 @@ public class GameManager : MonoBehaviour
     public int score;
     public TextMeshProUGUI duckText;
     public int ducksLost;
+    public TextMeshProUGUI gameOverText;
+
+    private bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         horizontalScreenSize = 5f;
         verticalScreenSize = 5f;
         score = 0;
         ducksLost = 0;
 
-        InvokeRepeating("CreateDuck", 0, 0.01f);
+        InvokeRepeating("CreateDuck", 0, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (ducksLost >= 3)
+        {
+            Time.timeScale = 0;
+            CancelInvoke();
+            GameOver();
+        }
     }
 
     void CreateDuck()
@@ -58,5 +67,10 @@ public class GameManager : MonoBehaviour
     public void ChangeDuckText(int score)
     {
         duckText.text = "Ducks missed: " + score;
+    }
+    void GameOver()
+    {
+        gameOver = true;
+        gameOverText.SetActive(true);
     }
 }
