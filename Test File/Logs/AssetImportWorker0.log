@@ -177,3 +177,38 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 22826.104267 seconds.
+  path: Assets/CastleFinished.png
+  artifactKey: Guid(9424f3e87b13c59438d984b7ae712ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CastleFinished.png using Guid(9424f3e87b13c59438d984b7ae712ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5560c8c6c3d9943254b1d5836ef820d6') in 0.103895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/TowerFinished.png
+  artifactKey: Guid(1433ad8300a894b429b392ae8109ef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerFinished.png using Guid(1433ad8300a894b429b392ae8109ef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '156754505377932ce95aaba215a2e093') in 0.037359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/CloudFinished.png
+  artifactKey: Guid(3e42092f325b9ec4faee82b86dbed3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CloudFinished.png using Guid(3e42092f325b9ec4faee82b86dbed3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a9b03a3d5bf1a98f3a0ce26e5598b9a1') in 0.025057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
