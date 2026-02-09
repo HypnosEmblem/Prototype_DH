@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TestDuckKill : MonoBehaviour
 {
+    // public GameObject explosion;
     private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class TestDuckKill : MonoBehaviour
     private void OnMouseDown()
     {
         gameManager.AddScore(1);
+        // explosion.SetActive(true);
         Destroy(gameObject);
     }
 }
