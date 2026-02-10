@@ -8,9 +8,13 @@ public class TestDuckMovement : MonoBehaviour
     public float speed;
     private Vector3 movementDirection;
     private float turnTime = 0.5f;
+
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("Manager").GetComponent<GameManager>();
         StartCoroutine(("ChangeMovementDirection"));
         int startDirection = Random.Range(1, 2);
 
@@ -28,11 +32,7 @@ public class TestDuckMovement : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(turnTime);
-            movementDirection = new Vector3(
-            Random.Range(-1.0f, 1.0f),
-            Random.Range(-1.0f, 1.0f),
-            0.0f // Use 0.0f for 2D, or Random.Range(-1.0f, 1.0f) for 3D
-            ).normalized;
+            movementDirection = new Vector3(Random.Range(-1.0f, 1.0f),Random.Range(-1.0f, 1.0f),0.0f).normalized;
         }
     }
 }

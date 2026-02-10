@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI pauseText;
 
     private bool gameOver;
+
+    public int bullets;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,10 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             pauseText.gameObject.SetActive(false);
             gamePaused = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            bullets = bullets - 1;
         }
     }
 

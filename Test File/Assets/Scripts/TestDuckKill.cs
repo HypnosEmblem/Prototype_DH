@@ -30,7 +30,7 @@ public class TestDuckKill : MonoBehaviour
         {
             return;
         }
-        else if (gameManager.gamePaused == false)
+        else if (gameManager.gamePaused == false && gameManager.bullets >= 0)
         {
             gameManager.AddScore(1);
             Destroy(gameObject);
