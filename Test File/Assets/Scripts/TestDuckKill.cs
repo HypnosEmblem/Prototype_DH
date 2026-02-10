@@ -7,10 +7,12 @@ public class TestDuckKill : MonoBehaviour
 {
     // public GameObject explosion;
     private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("Manager").GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class TestDuckKill : MonoBehaviour
         {
             gameManager.AddScore(1);
             Destroy(gameObject);
+            gameManager.bullets = 3;
         }
 
     }

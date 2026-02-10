@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     private bool gameOver;
 
-    public int bullets;
+    public int bullets = 3;
     // Start is called before the first frame update
     void Start()
     {
